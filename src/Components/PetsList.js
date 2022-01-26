@@ -5,7 +5,7 @@ import petsStore from "../store/PetsStore";
 function PetsList() {
   const [query, setQuery] = useState("");
   const [type, setType] = useState("");
-  const [pets, setPets] = useState(petsStore.pets);
+  const [pets, setPets] = useState(petsStore  .pets);
 
   const handleAdopt = (petId) =>
     setPets(pets.filter((pet) => pet.id !== petId));
